@@ -20,7 +20,7 @@ grunt
 cd ../kmerhi.github.io
 git checkout
 rm -rf dist
-mv ../jenkins-material-theme/dist ./dist
+cp -r ../jenkins-material-theme/dist ./dist
 
 git add dist/
 git commit -m "version $VERSION"
