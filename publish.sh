@@ -16,14 +16,14 @@ then
 fi
 
 grunt
-mv dist $FOLDER
 
-git checkout gh-pages
+cd ../kmerhi.github.io
+git checkout
 rm -rf dist
-mv $FOLDER ./dist
+mv ../jenkins-material-theme/dist ./dist
 
 git add dist/
 git commit -m "version $VERSION"
-git push origin gh-pages
+git push
 
 git checkout master
