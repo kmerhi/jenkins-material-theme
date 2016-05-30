@@ -265,7 +265,17 @@ pre {
 }
 
 .build-row-cell {
-    .pane.build-name .display-name {
-        margin-left: 30px;
+    .pane {
+        &.build-name {
+            width: 30%;
+
+            .display-name {
+                margin-left: 30px;
+            }
+        }
+
+        &.build-controls {
+            width: 20%;
+        }
     }
 }
